@@ -1,0 +1,138 @@
+#stop_list_debugger {
+	display: none;
+}
+
+#geo_location_debugger {
+	display: none;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	text-decoration: overline underline double 2px;
+	margin-bottom: 30px;
+}
+
+.stop_value {
+	cursor: pointer;
+}
+
+#map {
+	width: 50%;
+	height: 400px;
+	background: gray;
+}
+
+#radius_flexbox {
+	display: flex;
+}
+
+#radius_selection_cue {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+#nearby_stops {
+	margin-top: 30px;
+}
+
+.distance_cue {
+	display: inline-block;
+	padding-right: 5px;
+	font-size: small;
+}
+
+.distance_cue::first-letter {
+	font-size: medium;
+}
+
+.distance_value {
+	display: inline-block;
+	width: 65px;
+}
+
+.stop_cue {
+	display: inline-block;
+	padding-right: 5px;
+	font-size: small;
+}
+
+.stop_cue::first-letter {
+	font-size: medium;
+}
+
+.stop_value {
+	color: blue;
+	text-decoration: underline blue;
+}
+
+#to_be_scrolled {
+	display: flex;
+}
+
+#map_counterpart {
+	display: block;
+	width: 50%;
+}
+
+.yellow_region {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.route_value {
+	font-size: large;
+	margin-left: 20px;
+	font-weight: bold;
+	display: inline-block;
+	width: 80px;
+}
+
+.ETA_cue {
+	margin-left: 20px;
+	font-weight: bold;
+	display: inline-block;
+	width: 50px;
+}
+
+.ETAs {
+	color: blue;
+	font-weight: bold;
+	display: inline-block;
+	width: 80px;
+}
+
+.no_route_cue {
+	margin-left: 20px;
+}
+
+* {
+	font-family: Ubuntu;
+}
+
+.margin_placement {
+	margin-left: 10px;
+}
+
+.yellow_region span {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+	#to_be_scrolled {
+		display: flex;
+		flex-direction: column;
+	}
+	#map_counterpart {
+		display: block;
+		width: 100%;
+	}
+	#map {
+		width: 100%;
+		height: 400px;
+		background: gray;
+	}
+}
